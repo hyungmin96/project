@@ -1,6 +1,21 @@
 .homeForm {
-    display: flex;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;    
+  
+}
+
+.background_top {
+    background-color: lightblue;
+    height: 30vh;
+    width: 100vw;
+}
+
+.background_middle {
+    background-color: ivory;
+    height: 30vh;
+    width: 100vw;
+}
+
+.background_bot {
+    background-color: lightgray;
+    height: 30vh;
+    width: 100vw;
 }
