@@ -1,6 +1,7 @@
-.loginForm {
-    flex: 1;
+.loginForm {    
     justify-content: center;
     align-items: center;
-    height: 90vh;    
+    height: 90vh;
+    width: 100vw;
+    background-color: lightblue;
 }

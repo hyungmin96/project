@@ -24,15 +24,18 @@ const Login = () => {
         } else {
             alert('로그인 성공')
             localStorage.setItem("userId", id);
-            navigate('/home')
+            navigate('/home', { replace: true })
         }
     }
 
     return (
         <div className='loginForm'>
-            <input className='section_id' placeholder='ID' onChange={onChangeId} value={id || ""} />
-            <input className='section_pwd' placeholder='pwd' onChange={onChangePwd} value={password || ""} type="password" />
-            <button className='section_btn_login' onClick={onLog}>로그인</button>
+            <div className='login_content'>
+                <h3>로그인</h3>
+                <input className='section_id' placeholder='아이디' onChange={onChangeId} value={id || ""} />
+                <input className='section_pwd' placeholder='비밀번호' onChange={onChangePwd} value={password || ""} type="password" />
+                <button className='section_btn_login' onClick={onLog}>로그인</button>
+            </div>
         </div>
     );
 };

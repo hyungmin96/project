@@ -17,7 +17,7 @@ const Header = () => {
     const onHandleLog = () => {
         if (logStatus === "logout") {
             localStorage.clear();
-            navigate('/')
+            navigate('/', { replace: true })
         }
     }
 
